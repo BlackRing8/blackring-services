@@ -1,6 +1,5 @@
 import * as React from "react";
-import NavBar from "../komponen/NavBar";
-import CursorEffect from "../komponen/CursorEffect";
+import CursorEffect from "../komponen/cursorEffect/CursorEffect";
 
 const Home = () => {
   return (
