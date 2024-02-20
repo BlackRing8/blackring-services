@@ -8,7 +8,7 @@ const Home = () => {
       {/* body utama */}
       <div className="flex bg-black w-full h-auto sm:h-screen sm:items-center justify-center">
         {/* kontener pertama */}
-        <div className="flex flex-col-reverse h-[720px] w-[350px] sm:flex sm:flex-row gap-3 sm:w-[1000px] sm:h-[450px] pb-10 pt-20">
+        <div className="flex flex-col-reverse h-[720px] w-[350px] sm:flex sm:flex-row gap-3 sm:w-[1000px] sm:h-[450px] pb-10 pt-20 sm:pt-0">
           <div className="flex w-[350px] h-full sm:w-[320px] sm:h-full border-2 border-white rounded-xl"></div>
 
           {/* Kontener ke dua */}
