@@ -1,14 +1,14 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages_/Home";
+import { BrowserRouter as Router } from "react-router-dom";
+import AnimasiRoute from "./route/AnimasiRoute";
 
 function App() {
   return (
     <>
       <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <Router>
+          <AnimasiRoute />
+        </Router>
       </div>
     </>
   );
