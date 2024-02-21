@@ -39,8 +39,8 @@ const CursorEffect = () => {
       let y = pergerakan.y;
 
       circles.forEach(function (circle, index) {
-        circle.style.left = x - 10 + "px";
-        circle.style.top = y - 10 + "px";
+        circle.style.left = x - 16 + "px";
+        circle.style.top = y - 16 + "px";
 
         circle.style.scale = (circles.length - index) / circles.length;
 
@@ -48,8 +48,8 @@ const CursorEffect = () => {
         circle.y = y;
 
         const nextCircle = circles[index + 1] || circles[0];
-        x += (nextCircle.x - x) * 0.5;
-        y += (nextCircle.y - y) * 0.5;
+        x += (nextCircle.x - x) * 0.4;
+        y += (nextCircle.y - y) * 0.4;
       });
       requestAnimationFrame(animateCircle);
     };

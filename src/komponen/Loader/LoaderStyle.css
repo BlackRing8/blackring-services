@@ -1,0 +1,21 @@
+.cursor {
+  color: white;
+  animation: blink 1s linear infinite;
+}
+
+.text6 {
+  color: #f97316;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.test {
+  z-index: 9999;
+}
