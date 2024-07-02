@@ -1,11 +1,20 @@
-import "./App.css";
+import React from "react";
+import Home from "./pages_/home_page/Home";
 
-import AnimasiRoute from "./route/AnimasiRoute";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
   return (
     <>
-      <AnimasiRoute />
+      <div className="flex h-screen w-full">
+        <AnimatePresence>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </AnimatePresence>
+      </div>
     </>
   );
 }

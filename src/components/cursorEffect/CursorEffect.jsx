@@ -59,12 +59,11 @@ const CursorEffect = () => {
 
   return (
     <>
-      <motion.div className="circle" />
-      <motion.div className="circle" />
-      <motion.div className="circle" />
-      <motion.div className="circle" />
-      <motion.div className="circle" />
-      <motion.div className="circle" />
+      <div className="absolute h-10 w-10 bg-transparant z-10"></div>
+      <motion.div className="circle" animate="" />
+      <motion.div className="circle" animate="" />
+      <motion.div className="circle" animate="" />
+      <motion.div className="circle" animate="" />
     </>
   );
 };
