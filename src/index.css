@@ -6,11 +6,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url(WIB.cur), auto;
+  cursor: url("/WIB.cur"), auto;
 }
 
 a {
-  cursor: url(TEXT SELECT.cur), auto;
+  cursor: url("/TEXT SELECT.cur"), auto;
 }
 
 html {
