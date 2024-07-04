@@ -6,11 +6,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url("/WIB.cur"), auto;
+  cursor: url("/Hi-tech.cur"), auto;
 }
 
 a {
-  cursor: url("/TEXT SELECT.cur"), auto;
+  cursor: url("/Hi-tech.cur"), auto;
+}
+.hm {
+  cursor: url("/Hi-tech.cur"), auto;
+}
+button {
+  cursor: url("/Hi-tech.cur"), auto;
 }
 
 html {
@@ -26,5 +32,11 @@ body {
 @media (min-width: 700px) {
   body {
     overflow-y: hidden;
+  }
+}
+
+@media (max-width: 700px) {
+  .side {
+    display: none;
   }
 }

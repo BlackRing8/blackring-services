@@ -1,7 +1,7 @@
 import React from "react";
 
 const ContainerSatu = () => {
-  return <div>ContainerSatu</div>;
+  return <div className="absolute"></div>;
 };
 
 export default ContainerSatu;
