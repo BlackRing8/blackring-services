@@ -53,23 +53,43 @@ export const LoaderHome = () => {
 
   return (
     <TrackVisibility>
-      <motion.section
+      {/* <motion.section
         initial={{ y: 0, opacity: 1 }}
         animate={{
-          y: -1000,
+          x: -1000,
           transition: {
             duration: 1,
             delay: 3,
           },
         }}
         exit={{ y: window.innerWidth }}
-        className="flex bg-black h-screen w-screen ml-0 justify-center items-center absolute test"
+        className="flex bg-black h-screen w-3/4 justify-center items-center absolute test"
       >
-        <span className="wrap text6 text-xl text-center" id="el">
+        <span className="wrap text6 text-xl" id="el">
           {curWord}
         </span>
         <span className="cursor text-2xl">|</span>
-      </motion.section>
+      </motion.section> */}
+      <div className="flex w-full h-screen bg-transparent left-0 absolute z-10 ">
+        <div className="flex w-1/2 h-screen bg-green-500 relative anm1"></div>
+        <motion.section
+          initial={{ y: 0, opacity: 1 }}
+          animate={{
+            x: 2000,
+            transition: {
+              duration: 1,
+              delay: 1,
+            },
+          }}
+          exit={{ x: window.innerWidth }}
+          className="flex bg-red-500 h-screen w-1/2 justify-center items-center relative test"
+        >
+          {/* <span className="wrap text6 text-xl" id="el">
+            {curWord}
+          </span>
+          <span className="cursor text-2xl">|</span> */}
+        </motion.section>
+      </div>
     </TrackVisibility>
   );
 };

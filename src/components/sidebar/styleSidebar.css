@@ -1,0 +1,30 @@
+.test2 {
+  animation: rotate 5s linear infinite;
+  stroke: red;
+}
+
+@keyframes rotate {
+  0% {
+    stroke-dashoffset: 565.48;
+  }
+  25% {
+    stroke-dashoffset: 540.658;
+  }
+  50% {
+    stroke-dashoffset: 545.58;
+  }
+  75% {
+    stroke-dashoffset: 540.658;
+  }
+  100% {
+    stroke-dashoffset: 565.48;
+  }
+}
+
+.test3 {
+  text-align: center;
+
+  justify-content: center;
+
+  z-index: 50;
+}

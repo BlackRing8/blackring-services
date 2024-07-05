@@ -8,6 +8,8 @@ const CursorEffect = () => {
     x: 0,
     y: 0,
   });
+  const [isMoving, setIsMoving] = useState(false);
+  const timeoutRef = React.useRef(null);
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -15,6 +17,12 @@ const CursorEffect = () => {
         x: e.clientX,
         y: e.clientY,
       });
+      setIsMoving(true);
+      clearTimeout(timeoutRef.current);
+
+      timeoutRef.current = setTimeout(() => {
+        setIsMoving(false);
+      }, 500);
     };
 
     window.addEventListener("mousemove", mouseMove);
@@ -31,6 +39,7 @@ const CursorEffect = () => {
     circle.x = pergerakan.x;
     circle.y = pergerakan.y;
     circle.style.backgroundColor = colors[index % colors.length];
+    circle.style.opacity = isMoving ? 0.8 : 0.2; // Menampilkan atau menyembunyikan lingkaran berdasarkan isMoving
   });
 
   useEffect(() => {
@@ -39,8 +48,9 @@ const CursorEffect = () => {
       let y = pergerakan.y;
 
       circles.forEach(function (circle, index) {
-        circle.style.left = x - 16 + "px";
-        circle.style.top = y - 16 + "px";
+        const offset = 23;
+        circle.style.left = x - 16 + offset + "px";
+        circle.style.top = y - 16 + offset + "px";
 
         circle.style.scale = (circles.length - index) / circles.length;
 
