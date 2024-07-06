@@ -14,7 +14,7 @@ export const SideBar = () => {
   };
 
   return (
-    <div className="h-screen w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5 flex-col border-r-2 border-blue-200 bg-gradient-to-r from-[#2C3E50] to-[#000] z-20 side">
+    <div className="h-screen w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5 flex-col border-r-2 border-white bg-gradient-to-r from-[#090d11] via-[#10171e] to-[#000] z-20 side">
       <div className="mb-2 flex items-center gap-4 p-4">
         <img src="/logo-br-w.png" alt="brand" className="h-10 w-10 " />
         <Typography variant="h5" color="white">
@@ -112,14 +112,14 @@ export const SideBar = () => {
           Log Out
         </ListItem> */}
       </List>
-      <Alert open={openAlert} className="mt-auto w-64 mx-auto justify-center bg-transparent border-2 border-red-200" onClose={() => setOpenAlert(false)}>
+      <Alert open={openAlert} className="mt-auto w-64 mx-auto justify-center bg-transparent border-2 border-white" onClose={() => setOpenAlert(false)}>
         <svg width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <circle cx="100" cy="100" r="90" fill="none" stroke="#e6e6e6" stroke-width="20" />
           <circle cx="100" cy="100" r="90" fill="none" stroke="#00bfff" stroke-width="20" stroke-dasharray="565.48" stroke-dashoffset="565.48" className="test2">
             {/* <animate attributeName="stroke-dashoffset" from="565.48" to="540.658" dur="2s" fill="freeze" /> */}
           </circle>
           <text x="50%" y="50%" dy=".3em" text-anchor="middle" font-size="60" fill="#fff">
-            5%
+            8%
           </text>
         </svg>
 

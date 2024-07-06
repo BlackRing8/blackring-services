@@ -1,5 +1,5 @@
 .test2 {
-  animation: rotate 5s linear infinite;
+  animation: rotate 10s linear infinite;
   stroke: red;
 }
 
@@ -8,13 +8,13 @@
     stroke-dashoffset: 565.48;
   }
   25% {
-    stroke-dashoffset: 540.658;
+    stroke-dashoffset: 520.658;
   }
   50% {
     stroke-dashoffset: 545.58;
   }
   75% {
-    stroke-dashoffset: 540.658;
+    stroke-dashoffset: 520.658;
   }
   100% {
     stroke-dashoffset: 565.48;

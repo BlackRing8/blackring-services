@@ -1,0 +1,57 @@
+/* Container satu */
+.c3 {
+  box-shadow: inset 0 0 18px #2c3e50;
+}
+
+.fi {
+  animation: gerak 9s linear infinite;
+}
+.fi2 {
+  animation: gerak2 6s linear infinite;
+}
+.fi3 {
+  animation: gerak3 5s linear infinite;
+}
+
+@keyframes gerak {
+  0% {
+    margin-top: 20px;
+    margin-left: 16px;
+  }
+  50% {
+    margin-top: 20px;
+    margin-left: 140px;
+  }
+  100% {
+    margin-top: 20px;
+    margin-left: 16px;
+  }
+}
+@keyframes gerak2 {
+  0% {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  50% {
+    margin-top: 10px;
+    margin-left: 120px;
+  }
+  100% {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
+@keyframes gerak3 {
+  0% {
+    margin-top: 10px;
+    margin-left: 130px;
+  }
+  50% {
+    margin-top: 10px;
+    margin-left: 60px;
+  }
+  100% {
+    margin-top: 10px;
+    margin-left: 130px;
+  }
+}

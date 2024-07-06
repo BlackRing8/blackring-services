@@ -1,10 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const ContainerDua = () => {
   return (
-    <div className="flex  w-full h-full rounded-xl border-red-600 border-2">
-      <div className="flex flex-wrap w-full h-full rounded-xl"></div>
-    </div>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.5 } }} className="flex w-full h-auto rounded-xl bg-[#000]  mb-[15px] ">
+      <div className="flex flex-wrap w-full h-[190px] rounded-xl"></div>
+    </motion.div>
   );
 };
 
