@@ -14,7 +14,7 @@ export const SideBar = () => {
   };
 
   return (
-    <div className="h-screen w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5 flex-col border-r-2 border-white bg-gradient-to-r from-[#090d11] via-[#10171e] to-[#000] z-20 side">
+    <div className="h-screen w-full max-w-[19rem] p-4 shadow-xl shadow-blue-gray-900/5 flex-col border-r-2 border-white bg-gradient-to-r from-[#090d11] via-[#10171e] to-[#000] z-20 side">
       <div className="mb-2 flex items-center gap-4 p-4">
         <img src="/logo-br-w.png" alt="brand" className="h-10 w-10 " />
         <Typography variant="h5" color="white">
