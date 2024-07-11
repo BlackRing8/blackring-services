@@ -39,7 +39,7 @@ const CursorEffect = () => {
     circle.x = pergerakan.x;
     circle.y = pergerakan.y;
     circle.style.backgroundColor = colors[index % colors.length];
-    circle.style.opacity = isMoving ? 0.8 : 0.2; // Menampilkan atau menyembunyikan lingkaran berdasarkan isMoving
+    circle.style.opacity = isMoving ? 0.8 : 0; // Menampilkan atau menyembunyikan lingkaran berdasarkan isMoving
   });
 
   useEffect(() => {
